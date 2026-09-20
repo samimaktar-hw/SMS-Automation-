@@ -154,16 +154,16 @@ def do_git_update():
     print("\n")
 
     if success:
-        mesgdcrt.SuccessMessage("TBomb was updated to the latest version")
+        mesgdcrt.SuccessMessage("SMS-Automation was updated to the latest version")
         mesgdcrt.GeneralMessage(
             "Please run the script again to load the latest version")
     else:
-        mesgdcrt.FailureMessage("Unable to update TBomb.")
+        mesgdcrt.FailureMessage("Unable to update SMS-Automation.")
         mesgdcrt.WarningMessage("Make Sure To Install 'git' ")
         mesgdcrt.GeneralMessage("Then run command:")
         print(
             "git checkout . && "
-            "git pull https://github.com/TheSpeedX/TBomb.git HEAD")
+            "git pull https://github.com/samimaktar-hw/SMS-Automation.git HEAD")
     sys.exit()
 
 
@@ -181,23 +181,23 @@ def check_for_updates():
         return
     mesgdcrt.SectionMessage("Checking for updates")
     fver = requests.get(
-        "https://raw.githubusercontent.com/TheSpeedX/TBomb/master/.version"
+        "https://raw.githubusercontent.com/samimaktar-hw/SMS-Automation-/main/.version
     ).text.strip()
     if fver != __VERSION__:
         mesgdcrt.WarningMessage("An update is available")
         mesgdcrt.GeneralMessage("Starting update...")
         update()
     else:
-        mesgdcrt.SuccessMessage("TBomb is up-to-date")
-        mesgdcrt.GeneralMessage("Starting TBomb")
+        mesgdcrt.SuccessMessage("SMS-Automation is up-to-date")
+        mesgdcrt.GeneralMessage("Starting SMS-Automation")
 
 
 def notifyen():
     try:
         if DEBUG_MODE:
-            url = "https://github.com/TheSpeedX/TBomb/raw/dev/.notify"
+            url = "https://github.com/samimaktar-hw/SMS-Automation-/raw/dev/.notify"
         else:
-            url = "https://github.com/TheSpeedX/TBomb/raw/master/.notify"
+            url = "https://github.com/samimaktar-hw/SMS-Automation-/raw/main/.notify"
         noti = requests.get(url).text.upper()
         if len(noti) > 10:
             mesgdcrt.SectionMessage("NOTIFICATION: " + noti)
@@ -251,7 +251,7 @@ def pretty_print(cc, target, success, failed):
     mesgdcrt.GeneralMessage("Failed       : " + str(failed))
     mesgdcrt.WarningMessage(
         "This tool was made for fun and research purposes only")
-    mesgdcrt.SuccessMessage("TBomb was created by SpeedX")
+    mesgdcrt.SuccessMessage("SMS-Automation was created by samim")
 
 
 def workernode(mode, cc, target, count, delay, max_threads):
@@ -372,7 +372,7 @@ def selectnode(mode="sms"):
 
 mesgdcrt = MessageDecorator("icon")
 if sys.version_info[0] != 3:
-    mesgdcrt.FailureMessage("TBomb will work only in Python v3")
+    mesgdcrt.FailureMessage("SMS-Automation will work only in Python v3")
     sys.exit()
 
 try:
@@ -382,7 +382,7 @@ except FileNotFoundError:
 
 
 __VERSION__ = get_version()
-__CONTRIBUTORS__ = ['SpeedX', 't0xic0der', 'scpketer', 'Stefan']
+__CONTRIBUTORS__ = ['Samim', 't0xic0der', 'scpketer', 'Stefan']
 
 ALL_COLORS = [Fore.GREEN, Fore.RED, Fore.YELLOW, Fore.BLUE,
               Fore.MAGENTA, Fore.CYAN, Fore.WHITE]
@@ -391,7 +391,7 @@ RESET_ALL = Style.RESET_ALL
 ASCII_MODE = False
 DEBUG_MODE = False
 
-description = """TBomb - Your Friendly Spammer Application
+description = """SMS-Automation - Your Friendly Spammer Application
 
 TBomb can be used for many purposes which incudes -
 \t Exposing the vulnerable APIs over Internet
@@ -404,19 +404,19 @@ TBomb is not intented for malicious uses.
 parser = argparse.ArgumentParser(description=description,
                                  epilog='Coded by SpeedX !!!')
 parser.add_argument("-sms", "--sms", action="store_true",
-                    help="start TBomb with SMS Bomb mode")
+                    help="start SMS-Automation with SMS Bomb mode")
 parser.add_argument("-call", "--call", action="store_true",
-                    help="start TBomb with CALL Bomb mode")
+                    help="start SMS-Automation with CALL Bomb mode")
 parser.add_argument("-mail", "--mail", action="store_true",
-                    help="start TBomb with MAIL Bomb mode")
+                    help="start SMS-Automation with MAIL Bomb mode")
 parser.add_argument("-ascii", "--ascii", action="store_true",
                     help="show only characters of standard ASCII set")
 parser.add_argument("-u", "--update", action="store_true",
-                    help="update TBomb")
+                    help="update SMS-Automation")
 parser.add_argument("-c", "--contributors", action="store_true",
-                    help="show current TBomb contributors")
+                    help="show current SMS-Automation contributors")
 parser.add_argument("-v", "--version", action="store_true",
-                    help="show current TBomb version")
+                    help="show current SMS-Automation version")
 
 
 if __name__ == "__main__":
