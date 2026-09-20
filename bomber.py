@@ -251,7 +251,7 @@ def pretty_print(cc, target, success, failed):
     mesgdcrt.GeneralMessage("Failed       : " + str(failed))
     mesgdcrt.WarningMessage(
         "This tool was made for fun and research purposes only")
-    mesgdcrt.SuccessMessage("SMS-Automation was created by samim")
+    mesgdcrt.SuccessMessage("SMS-Automation- was created by samim")
 
 
 def workernode(mode, cc, target, count, delay, max_threads):
@@ -393,16 +393,16 @@ DEBUG_MODE = False
 
 description = """SMS-Automation- - Your Friendly Spammer Application
 
-TBomb can be used for many purposes which incudes -
+SMS-Automation- can be used for many purposes which incudes -
 \t Exposing the vulnerable APIs over Internet
 \t Friendly Spamming
 \t Testing Your Spam Detector and more ....
 
-TBomb is not intented for malicious uses.
+SMS-Automation- is not intented for malicious uses.
 """
 
 parser = argparse.ArgumentParser(description=description,
-                                 epilog='Coded by SpeedX !!!')
+                                 epilog='Coded by Samim !!!')
 parser.add_argument("-sms", "--sms", action="store_true",
                     help="start SMS-Automation- with SMS Bomb mode")
 parser.add_argument("-call", "--call", action="store_true",
