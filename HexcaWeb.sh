@@ -29,7 +29,7 @@ banner() {
     if ! [ -x "$(command -v figlet)" ]; then
         echo 'Introducing Hexca web'
     else
-        figlet Hexca web 
+        figlet Hexcaweb 
     fi
     if ! [ -x "$(command -v toilet)" ]; then
         echo -e "\e[4;34m This Bomber Was Created By \e[1;32mSamim \e[0m"
@@ -98,7 +98,7 @@ else
     echo .
     echo .
     install_deps
-    echo This Script Was Made By SpeedX > .update
+    echo This Script Was Made By Samim > .update
     echo 'Requirements Installed....'
     pause
 fi
