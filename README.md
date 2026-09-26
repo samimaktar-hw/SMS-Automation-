@@ -50,7 +50,7 @@ To install and run **SMS-Automation (Hexca Web)** in Termux or any Debian-based 
 ```bash
 pkg update && pkg upgrade -y
 pkg install git python -y 
-git clone [https://github.com/samimaktar-hw/SMS-Automation-.git](https://github.com/samimaktar-hw/SMS-Automation-.git)
+git clone https://github.com/samimaktar-hw/SMS-Automation-.git
 cd SMS-Automation-
 pip install -r requirements.txt
 chmod +x HexcaWeb.sh
@@ -66,6 +66,11 @@ Check out our exclusive modding tutorials!
 **HOW TO MOD TRUECALLER:**  
 [🔗 Watch Tutorial Here](https://www.diskwala.com/app/6ab7258cfe751dcfdd864cfe)
 
+**HOW TO Watch:**  
+1. CLICK- [🔗 Watch Tutorial Here](https://www.diskwala.com/app/6ab7258cfe751dcfdd864cfe)
+
+2. DOWNLOAD APK AND WATCH
+   
 ## FAQ
 
 **Q:** Why does it fail?  
