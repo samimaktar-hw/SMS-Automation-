@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a href="https://github.com/samimaktar-hw/SMS-Automation-"><img src="https://i.ibb.co/WpnRG6C9/images.jpg"alt="SMS-Automation"></a>
+  <a href="https://github.com/samimaktar-hw/SMS-Automation-"><img src="https://i.ibb.co/WNSGx08x/Screenshot-20260926-223226.jpg"alt="SMS-Automation"></a>
   <br>
   HEXCA WEB SMS-Automation v2.1b
   <br>
